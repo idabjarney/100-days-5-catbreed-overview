@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat breeds</title>
+  <link rel="stylesheet" href="/src/styles.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="./img/catlogo.png" alt="">
+      <h1>Cat breeds</h1>
+    </div>
+    <p>Find out which cat may be best suited for you</p>
+  </header>
+  <div class="container">
+    <div class="filter-container">
+      <div class="filter-header">
+        <div class="filter-header-container">
+          <h3>BREEDS</h3>
+          <p class="filter">Filter</p>
+          <p class="results">20 results</p>
+        </div>
+        <div class="filter-header-button">
+          <button class="clear-all-button">Clear all</button>
+        </div>
+      </div>
+      <form class="form">
+        <fieldset>
+          <legend>Size</legend>
+          <label for="small"><input id="small" name="small" type="checkbox">Small</label>
+          <label for="medium-size"><input id="medium-size" name="medium-size" type="checkbox">Medium</label>
+          <label for="large"><input id="large" name="large" type="checkbox">Large</label>
+        </fieldset>
+        <fieldset>
+          <legend>Coat</legend>
+          <label for="short"><input id="short" name="short" type="checkbox">Short</label>
+          <label for="medium-coat"><input id="medium-coat" name="medium-coat" type="checkbox">Medium</label>
+          <label for="long"><input id="long" name="long" type="checkbox">Long</label>
+        </fieldset>
+        <fieldset>
+          <legend>Energy</legend>
+          <label for="low"><input id="low" name="low" type="checkbox">Low</label>
+          <label for="medium-energy"><input id="medium-energy" name="medium-energy" type="checkbox">Medium</label>
+          <label for="high"><input id="high" name="high" type="checkbox">High</label>
+        </fieldset>
+        <fieldset>
+          <legend>Shedding</legend>
+          <label for="minimal"><input id="minimal" name="minimal" type="checkbox">Minimal</label>
+          <label for="moderate"><input id="moderate" name="moderate" type="checkbox">Moderate</label>
+          <label for="heavy"><input id="heavy" name="heavy" type="checkbox">Heavy</label>
+          
+        </fieldset>
+      </form>
+    </div>
+    <div class="results-container"></div>
+  </div>
+</body>
+<script src="./script.js" type="module"></script>
+</html>

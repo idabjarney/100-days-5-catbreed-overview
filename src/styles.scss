@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 130px;
+  background-color: #E81C24;
+  color: #faf0f0;
+  padding: 20px 100px;
+  box-shadow: 2px 1px 4px 1px rgb(0, 0, 0, 0.45);
+
+  .logo-container {
+    display: flex;
+    img {
+      height: 100px;
+      width: 100px;
+    }
+
+    h1 {
+      font-size: 60px;
+      font-family: 'Cormorant', serif;
+      font-variant: small-caps;
+      transform: translate(-40px, 15px);
+    }
+  }
+
+  p {
+    padding-left: 120px;
+    transform: translate(0, -23px);
+    color: #ebe1e1c7;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    font-style: italic;
+  }
+
+}
+
+.container {
+  width: 950px;
+  margin-top: 80px;
+  color: rgb(66, 66, 66);
+  .filter-container {
+    width: 250px;
+    
+    .filter-header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #cfcfcf;
+      user-select: none;
+      height: 100px;
+      align-items: flex-end;
+      .filter-header-container {
+        padding-bottom: 5px;
+        h3 {
+          font-size: 22px;
+          font-weight: 500;
+          margin-bottom: 15px;
+        }
+
+        .filter {
+          color: #494949;
+        }
+
+        .results {
+          font-size: 12px;
+        }
+      }
+
+      .filter-header-button {
+        // margin-top: auto;
+
+        .clear-all-button {
+          width: 70px;
+          height: 28px;
+          cursor: pointer;
+          color: #E81C24;
+          background-color: #ffff;
+          border: none;
+        }
+      }
+    }
+
+    form {
+      width: 250px;
+      user-select: none;
+      fieldset {
+        margin-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-bottom: 1px solid #cfcfcf;
+        
+        legend {
+          font-size: 16px;
+          font-weight: 500;
+        }
+
+        label {
+          cursor: pointer;
+          margin-left: 10px;
+          &:hover {
+            background: linear-gradient(90deg, rgba(235,235,235,1) 6%, rgba(235,235,235,1) 33%, rgba(255,255,255,1) 94%);
+          }
+
+          input[type="checkbox"] {
+            margin-right: 10px;
+            cursor: pointer;
+
+            &:checked {
+              accent-color: #E81C24;
+            }
+          }
+
+        }
+
+
+      }
+    }
+  }
+}
